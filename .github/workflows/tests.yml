@@ -56,12 +56,3 @@ jobs:
         with:
           name: code-coverage-report
           path: htmlcov/
-
-  all_checks_passed:
-    # Used to easily force requirements checks in GitHub
-    needs:
-      - checks
-      - test
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "All checks passed"
