@@ -47,6 +47,8 @@ class LLMComponent:
                     messages_to_prompt=prompt_style.messages_to_prompt,
                     completion_to_prompt=prompt_style.completion_to_prompt,
                     verbose=True,
+                    # for speed
+                    n_threads=16
                 )
 
             case "sagemaker":
